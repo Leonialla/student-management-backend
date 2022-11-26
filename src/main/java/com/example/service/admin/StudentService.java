@@ -75,6 +75,7 @@ public class StudentService extends BaseService {
             return failedResult("所属班级 " + entity.getClassId() + "不存在!");
         }
 
+        entity.setPassword(userService.computePasswordHash(entity.getPassword()));
         manager.create(entity);
         return result("添加成功");
     }

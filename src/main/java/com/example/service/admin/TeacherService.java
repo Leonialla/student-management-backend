@@ -74,7 +74,6 @@ public class TeacherService extends BaseService {
         }
 
         entity.setPassword(userService.computePasswordHash(entity.getPassword()));
-
         manager.create(entity);
         return result("添加成功");
     }
