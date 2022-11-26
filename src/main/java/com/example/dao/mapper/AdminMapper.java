@@ -1,0 +1,9 @@
+package com.example.dao.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.example.model.entity.AdminEntity;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AdminMapper extends BaseMapper<AdminEntity> {
+}
