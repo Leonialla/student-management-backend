@@ -82,7 +82,7 @@
           AND course_selected_count &lt; course_max_size) cnt
      </select>
 
-     <select id="getDepartmentIdById" resultType="Integer">
+     <select id="getDepartmentIdById" resultType="Long">
           SELECT teacher_department_id
           FROM course
                     JOIN teacher ON course_teacher_id = teacher_id
